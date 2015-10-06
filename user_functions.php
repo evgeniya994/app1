@@ -106,12 +106,6 @@ function checkUserForm(array $post)
         return "Не правильный адрес почты";
     }
 
-    if (!empty ($print['login']))
-    {
-        return "Такой login уже существует";
-    }
-
-
     //Если есть пользователь с такой почтой
     if (!is_null(getUserByEmail($post['email']))) {
         return "Указанная почта \"{$post['email']}\" уже используется другим человеком.";
