@@ -1,8 +1,11 @@
+<?
+require_once "functions.php";
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Вход</title>
 </head>
 <body>
 <a href="reg.php">Страница регистрации</a>
