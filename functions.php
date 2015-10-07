@@ -41,3 +41,16 @@ function getStreets()
     return $res;
 }
 
+
+function getUsers()
+{
+    global $handle;
+    $sql = "SELECT *
+	       FROM users
+	       WHERE id_users=$_SESSION[id_users]";
+    $result = $handle->query($sql);
+    if ($result->num_rows == 0) {
+        return null;
+    }
+    return $result->fetch_assoc();
+}
